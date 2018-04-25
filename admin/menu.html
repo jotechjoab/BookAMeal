@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Book A Meal | Caterer - Menu </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    <script src="../js/myapp.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Book A Meal </div>
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="meals.html">Meals</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="report.html">Reports</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+
+<div class="row-main">
+<div class="row">
+    <div class="card">
+        <div class="card-title">
+          My Menu
+           <div class="card-action"> <button class="btn btn-success" id="addMenuBtn" onclick="addMenu()"> Add a menu</button></div>
+          </div>  
+            
+   <div class="col-mb-12" id="todayMenu">
+       <h4>Please Select Date to Sort Menu</h4>
+       <input type="date" class="form-item" placeholder="Select Date to Sort Menu">
+       <button class="btn btn-success" >Sort</button>
+<table class="table">
+<tr>
+    <th>#</th>
+    <th>Menu Items </th>
+    <th>Price</th>
+    <th>Menu Date </th>
+    <th>Created By</th>
+    <th>Actions</th>
+</tr>
+<tr>
+    <td>1</td>
+    <td>Matooke & Beans</td>
+    <td>12,000 UGX</td>
+    <td>12<sup>th</sup> March 2018</td>
+    <td>Mumbere Joab</td>
+    <td><button class="btn btn-danger">Delete</button></td>
+</tr>
+<tr>
+        <td>2</td>
+        <td>Meat & Rice</td>
+        <td>12,000 UGX</td>
+        <td>12<sup>th</sup> March 2018</td>
+        <td>Mumbere Joab</td>
+        <td><button class="btn btn-danger">Delete</button></td>
+    </tr>
+    <tr>
+            <td>3</td>
+            <td>Kalo & Gnuts</td>
+            <td>12,000 UGX</td>
+            <td>12<sup>th</sup> March 2018</td>
+            <td>Mumbere Joab</td>
+            <td><button class="btn btn-danger">Delete</button></td>
+        </tr>
+</table>
+   </div>
+   <div class="col-mb-12" id="menu_form" style="display: none;">
+    <form>
+        <p>Please Select Menu Date  </p>
+        <input type="date" name="" placeholder="Enter Date" class="form-item"><br>
+        <p>Please Select The Day's Menu items </p>
+        <input type="checkbox" name="menu[]" value="matooke & beaf" > Matooke & Beaf <br>
+        <input type="checkbox" name="menu[]" value="Chips & Beaf" > Chips & Beaf <br>
+        <input type="checkbox" name="menu[]" value="Matooke & Chicken " > Matooke & Chicken <br>
+        <input type="checkbox" name="menu[]" value="Matooke & Beans" > Matooke & Beans <br>
+        <input type="checkbox" name="menu[]" value="matooke & beaf" > Chips & Chicken <br>
+        <input type="checkbox" name="menu[]" value="Rice & Beaf " > Rice & Beaf <br>
+        <input type="checkbox" name="menu[]" value="Rice & Chicken" > Rice & Chicken <br>
+        <input type="button" value="Submit Meal" class="btn btn-primary"> 
+    </form>
+   </div>        
+                           
+    </div>
+    
+        
+
+
+
+</div>
+</div>
+
+
+
+
+    </div>
+</body>
+</html>

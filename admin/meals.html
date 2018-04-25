@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Book A Meal | Caterer - Meals </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    <script src="../js/myapp.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Book A Meal </div>
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="meals.html">Meals</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="report.html">Reports</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+
+<div class="row-main">
+<div class="row">
+    <div class="card">
+        <div class="card-title">
+          My  Meal Options 
+           <div class="card-action"> <button class="btn btn-success" id="addMealBtn" onclick="addMeal()"> Add A Meal</button></div>
+          </div>  
+            
+   <div class="col-mb-12" id="meals_table">
+<table class="table">
+<tr>
+    <th>#</th>
+    <th>Meal Description</th>
+    <th>Price</th>
+    <th>Date Created</th>
+    <th>Created By</th>
+    <th>Actions</th>
+</tr>
+<tr>
+    <td>1</td>
+    <td>Matooke & Beans</td>
+    <td>12,000 UGX</td>
+    <td>12<sup>th</sup> March 2018</td>
+    <td>Mumbere Joab</td>
+    <td><button class="btn btn-primary">Edit</button> <button class="btn btn-danger">Delete</button></td>
+</tr>
+<tr>
+        <td>2</td>
+        <td>Meat & Rice</td>
+        <td>12,000 UGX</td>
+        <td>12<sup>th</sup> March 2018</td>
+        <td>Mumbere Joab</td>
+        <td><button class="btn btn-primary">Edit</button> <button class="btn btn-danger">Delete</button></td>
+    </tr>
+    <tr>
+            <td>3</td>
+            <td>Kalo & Gnuts</td>
+            <td>12,000 UGX</td>
+            <td>12<sup>th</sup> March 2018</td>
+            <td>Mumbere Joab</td>
+            <td><button class="btn btn-primary">Edit</button> <button class="btn btn-danger">Delete</button></td>
+        </tr>
+</table>
+   </div>
+   <div class="col-mb-12" id="meals_form" style="display: none;">
+    <form>
+        <p>Enter Meal Description </p>
+        <input type="text" name="" placeholder="Enter Meal" class="form-item">
+        <p>Enter Meal Price </p>
+        <input type="number" name="" placeholder="Enter Price" class="form-item">
+        <br>
+        <input type="button" value="Submit Meal" class="btn btn-primary"> 
+    </form>
+   </div>        
+                           
+    </div>
+    
+        
+
+
+
+</div>
+</div>
+
+
+
+
+    </div>
+</body>
+</html>

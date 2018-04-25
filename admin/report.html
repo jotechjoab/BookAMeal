@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Book A Meal | Caterer - Menu </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    <script src="../js/myapp.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Book A Meal </div>
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="meals.html">Meals</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="report.html">Reports</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+
+<div class="row-main">
+<div class="row">
+    <div class="card" >
+        <div class="card-title">
+          My Reports
+           <div class="card-action"> <button class="btn btn-success" id="btnReport" onclick="summaries()"> Daily Summaries </button></div>
+          </div>  
+            
+   <div class="col-mb-12" id="transDetails">
+       <h4>All Order Details</h4>
+  
+<table class="table">
+<tr>
+    <th>#</th>
+    <th>Order Date </th>
+    <th>Client Name </th>
+    <th>Menu Item</th>
+    <th>Amount </th>
+    <th>Served By</th>
+  
+</tr>
+<tr>
+    <td>1</td>
+    <td>12<sup>th</sup> March 2018</td>
+    <td>John Doe</td>
+    <td>Matooke & Beans</td>
+    <td>12,000 UGX </td>
+    <td> Mumbere Joab</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>12<sup>th</sup> March 2018</td>
+    <td>John Doe</td>
+    <td>Matooke & Beans</td>
+    <td>12,000 UGX </td>
+    <td> Mumbere Joab</td>
+</tr>
+<tr>
+        <td>3</td>
+        <td>12<sup>th</sup> March 2018</td>
+        <td>John Doe</td>
+        <td>Matooke & Beans</td>
+        <td>12,000 UGX </td>
+        <td> Mumbere Joab</td>
+    </tr>
+    <tr>
+            <td>4</td>
+            <td>12<sup>th</sup> March 2018</td>
+            <td>John Doe</td>
+            <td>Matooke & Beans</td>
+            <td>12,000 UGX </td>
+            <td> Mumbere Joab</td>
+        </tr>
+        <tr>
+                <td>5</td>
+                <td>12<sup>th</sup> March 2018</td>
+                <td>John Doe</td>
+                <td>Matooke & Beans</td>
+                <td>12,000 UGX </td>
+                <td> Mumbere Joab</td>
+            </tr>
+
+</table>
+   </div>
+         
+                           
+    </div>
+
+    <div class="card" style="display: none" id="tranSummary">
+            <div class="card-title">
+             My Daily Transation Summaries
+              </div>  
+                
+       <div class="col-mb-12"  >
+        <form>
+                <p>Please Select Transaction Date  </p>
+                <input type="date" class="form-item" placeholder="Please Select Transaction Date ">
+                <button class="btn btn-success" >Generate</button>
+           
+           
+        </form>
+        <table class="table">
+            <tr>
+                <th>Transaction Date</th>
+                <th>Number Of Orders </th>
+                <th>Total  Collection</th>
+            </tr>
+            <tr>
+                    <th>12<sup>th</sup> March 2018</th>
+                    <th>26 Orders  </th>
+                    <th>300,000 UGX</th>
+                </tr>
+        </table>
+       </div>        
+                               
+        </div>
+    
+        
+
+
+
+</div>
+</div>
+
+
+
+
+    </div>
+</body>
+</html>
